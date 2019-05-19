@@ -31,27 +31,43 @@
 }
 
 @mixin section($bgcolor, $shape, $orientation, $smoothie-url:""){
+    position:relative;
+    overflow: hidden;
     text-align: $orientation;
     height:100vh;
 background-color: $bgcolor;
 clip-path: $shape;
+-webkit-clip-path: $shape;
 display: flex;
+.col{
+    .input-label {
+        color: if($bgcolor==white, darken($green, 30%), $white); 
+    }
+    input {
+        border-radius: 15px;
+        border: none;
+        box-shadow: none;
+        margin: 5px;
+    }
+}
+
 .animated-smoothie {
-    margin-top: 20%;
+    align-self: center;
     position: absolute;
     height: 60%;
-    width: 100%;
+    width: 90%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     @if $smoothie-url != "" {
         background-image: $smoothie-url;
       }
-    @if $orientation == left {
-        margin-left: 50%;
-      }
-      @if $orientation == right {
-        margin-right: 50%;
-      }
+    @if $orientation==left{
+        
+    }
+    @if $orientation==right{
+        
+    }
 }
 .section-body{
     align-self: center;
@@ -60,8 +76,10 @@ display: flex;
     position: relative;
     margin: auto;
     padding: $default-padding;
+    
     .lorem-here {
         color: if($bgcolor==white, darken($green, 30%), $white);  
+        text-shadow: 0.5px 0.5px darken($bgcolor, 10%);
     }
     .section-title {
         text-align: if($orientation==left, right, left);
@@ -74,4 +92,9 @@ display: flex;
         }
     }
 }
+}
+
+@mixin clip-path($path) {
+    clip-path: $pathl;
+    -webkit-clip-path: $pathl; 
 }

@@ -1,9 +1,11 @@
 @import 'variables', 'mixins', 'keyframes';
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    // overflow: hidden;
+     max-width: 100vw;
 }
 
 body {
@@ -21,28 +23,31 @@ header {
     align-items: center;
     align-content: center;
     justify-content: center;
-background-image: linear-gradient(to right bottom, $gradient-color-one, $gradient-color-two), url(../assets/headerbg.jpg);
-background-position: center;
-background-size: cover;
-height: 95vh;
-position: relative;
-clip-path: $cut-bot;
+    background-image: linear-gradient(to right bottom, $gradient-color-one, $gradient-color-two), url(../assets/headerbg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+    position: relative;
+    clip-path: $cut-bot;
 
-.header-body{
-   transform: translateY(-15%);
-    text-align: center;
-    .logo-container {
-        background-image: $smiling-smoothie; 
-        background-position: top;
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 300px;
-        @include animation( 'sway 1s ease-in-out 1');
-    }
-    .lorem-header {
-        @include animation('moveinleft 1s ease-in-out 1');
-        color: $white;
-    }
+    .header-body {
+        transform: translateY(-15%);
+        text-align: center;
+
+        .logo-container {
+            background-image: $smiling-smoothie;
+            background-position: top;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 300px;
+            @include animation('sway 1s ease-in-out 1');
+        }
+
+        .lorem-header {
+            @include animation('moveinleft 1s ease-in-out 1');
+            color: $white;
+        }
+
         h1 {
             text-align: center;
             color: white;
@@ -51,63 +56,94 @@ clip-path: $cut-bot;
             font-size: 5em;
             @include animation('moveinright 1s ease-in-out 1');
         }
-        .btn-white {
-            @extend .btn;
-        background-color: #fff;
-        color: darken($gradient-color-two, 40% );
-        border-radius: 30px;
-        width: 150px;
-        height: 40px;
-        box-shadow: none;
-        border: none;
-        @include animation('moveinleft 1s ease-in-out 1');
-        }
-}
+
+    }
 }
 
-.healthy-and-delicious{
-    @include section($white, $cut-bot, right, $healthy-smoothie);
+.healthy-and-delicious {
+    @include section($white, $square, right, $healthy-smoothie);
 }
 
-.every-smoothie-is{
-    @include section($blue, $cut-bot, left);
+.every-smoothie-is {
+    @include section($blue, $cut-both-right, left);
 }
 
-.lose-weight{
-    @include section($white, $cut-bot, right, $smiling-smoothie);
+.lose-weight {
+    @include section($white, $square, right, $smiling-smoothie);
 }
 
-.add-muscule{
-    @include section($green, $cut-bot, left, $swole-smoothie-green);
+.add-muscule {
+    @include section(darken($green, 15%), $cut-both-left, left, $swole-smoothie-green);
 }
 
-.stay-alert{
-    @include section($white, $cut-bot, right, $smiling-smoothie);
+.stay-alert {
+    @include section($white, $square, right, $smiling-smoothie);
 }
 
-.sign-up{
-    @include section($orange, $cut-bot, left);
+.sign-up {
+    @include section($orange, $cut-top, left);
 }
 
 
 //buttons
 .btn:link,
 .btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 15px 40px;
-  display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
+    transform: translateY(-3px);
 }
 
 /* //animate goes down on click */
 .btn:active {
-  transform: translateY(-1px);
+    transform: translateY(-1px);
+}
+
+.btn-white {
+    @extend .btn;
+    background-color: #fff;
+    color: darken($gradient-color-two, 40%);
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    box-shadow: none;
+    border: none;
+    @include animation('moveinleft 1s ease-in-out 1');
 }
 
 
+@media only screen and (max-width: 600px) {
+    body {
+        max-width: 100vw;
+        padding: 10px;
 
+        header {
+            font-size: 1rem;
 
+            .header-body {
+                .logo-container {
+                    height: 100px;
+                }
+
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        section {
+            .section-body {
+                .section-title {
+                    h2 {
+                        font-size: 1.5em !important;  
+                    } 
+                }
+            }
+        }
+
+    }
+}
