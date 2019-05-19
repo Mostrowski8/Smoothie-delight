@@ -1,4 +1,4 @@
-@import 'variables', 'mixins';
+@import 'variables', 'mixins', 'keyframes';
 
 *{
     margin: 0;
@@ -26,20 +26,23 @@ background-position: center;
 background-size: cover;
 height: 95vh;
 position: relative;
-clip-path: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh);
+clip-path: $cut-bot;
 
 .header-body{
    transform: translateY(-15%);
-    
+    text-align: center;
     .logo-container {
-        background-image: url(../assets/happy-smoothie.png); 
+        background-image: $smiling-smoothie; 
         background-position: top;
         background-size: contain;
         background-repeat: no-repeat;
         height: 300px;
         @include animation( 'sway 1s ease-in-out 1');
     }
-    
+    .lorem-header {
+        @include animation('moveinleft 1s ease-in-out 1');
+        color: $white;
+    }
         h1 {
             text-align: center;
             color: white;
@@ -48,9 +51,46 @@ clip-path: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh);
             font-size: 5em;
             @include animation('moveinright 1s ease-in-out 1');
         }
+        .btn-white {
+            @extend .btn;
+        background-color: #fff;
+        color: darken($gradient-color-two, 40% );
+        border-radius: 30px;
+        width: 150px;
+        height: 40px;
+        box-shadow: none;
+        border: none;
+        @include animation('moveinleft 1s ease-in-out 1');
+        }
 }
 }
 
+.healthy-and-delicious{
+    @include section($white, $cut-bot, right, $healthy-smoothie);
+}
+
+.every-smoothie-is{
+    @include section($blue, $cut-bot, left);
+}
+
+.lose-weight{
+    @include section($white, $cut-bot, right, $smiling-smoothie);
+}
+
+.add-muscule{
+    @include section($green, $cut-bot, left, $swole-smoothie-green);
+}
+
+.stay-alert{
+    @include section($white, $cut-bot, right, $smiling-smoothie);
+}
+
+.sign-up{
+    @include section($orange, $cut-bot, left);
+}
+
+
+//buttons
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -68,58 +108,6 @@ clip-path: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh);
   transform: translateY(-1px);
 }
 
-.btn-white {
-background-color: #fff;
-color: #777;
-border-radius: 15px;
-width: 100px;
-}
 
 
-@include keyframes(moveinleft) {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-          }
-        
-          80% {
-            transform: translateX(20px);
-          }
-        
-          100% {
-        opacity: 1;
-        transform: translate(0);
-          }
-}
 
-@include keyframes(moveinright) {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-          }
-        
-          80% {
-            transform: translateX(-20px);
-          }
-        
-          100% {
-        opacity: 1;
-        transform: translate(0);
-          }
-}
-
-@include keyframes(sway) {
-    0% {
-        opacity: 0;
-        transform: rotate(30deg);
-          }
-        
-          80% {
-            transform: rotate(-30deg);
-          }
-        
-          100% {
-            opacity: 1;
-        transform: rotate(10deg);
-          }
-}

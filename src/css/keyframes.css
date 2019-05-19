@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Lato|Merienda|Pacifico|Permanent+Marker|Poiret+One");
+@-webkit-keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@-moz-keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@-o-keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@-webkit-keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@-moz-keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@-o-keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@-webkit-keyframes sway {
+  0% {
+    opacity: 0;
+    transform: rotate(30deg); }
+  80% {
+    transform: rotate(-30deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(10deg); } }
+
+@-moz-keyframes sway {
+  0% {
+    opacity: 0;
+    transform: rotate(30deg); }
+  80% {
+    transform: rotate(-30deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(10deg); } }
+
+@-o-keyframes sway {
+  0% {
+    opacity: 0;
+    transform: rotate(30deg); }
+  80% {
+    transform: rotate(-30deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(10deg); } }
+
+@keyframes sway {
+  0% {
+    opacity: 0;
+    transform: rotate(30deg); }
+  80% {
+    transform: rotate(-30deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(10deg); } }

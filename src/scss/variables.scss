@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Lato|Merienda|Pacifico|Permanent+Marker|Poiret+One');
 
 // colors
-$green: green;
-$yellow: yellow;
-$orange: orange;
-$red: red;
+$green:	rgb(226, 244, 199);
+$yellow: 	#f9d62e;
+$orange: #fc913a;
+$red: #ff4e50;
+$blue: #caeef9;
+$white: white;
 
 
 
@@ -24,3 +26,14 @@ $default-margin: 10px;
 //fonts
 $main-font: "Lato", sans-serif;
 $title-font: 'Dancing Script', cursive;
+$section-titles-font: $main-font;
+
+//clip paths
+$cut-bot: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh);
+
+
+//img url
+$smiling-smoothie: url(../assets/happy-smoothie.png);
+$swole-smoothie: url(../assets/swole-smoothie.png);
+$healthy-smoothie: url(../assets/healthy-smoothie.png);
+$swole-smoothie-green: url(../assets/swole-smoothie-green.png);

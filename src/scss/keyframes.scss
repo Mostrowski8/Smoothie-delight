@@ -1,0 +1,50 @@
+@import 'variables', 'mixins';
+
+
+@include keyframes(moveinleft) {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+          }
+        
+          80% {
+            transform: translateX(20px);
+          }
+        
+          100% {
+        opacity: 1;
+        transform: translate(0);
+          }
+}
+
+@include keyframes(moveinright) {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+          }
+        
+          80% {
+            transform: translateX(-20px);
+          }
+        
+          100% {
+        opacity: 1;
+        transform: translate(0);
+          }
+}
+
+@include keyframes(sway) {
+    0% {
+        opacity: 0;
+        transform: rotate(30deg);
+          }
+        
+          80% {
+            transform: rotate(-30deg);
+          }
+        
+          100% {
+            opacity: 1;
+        transform: rotate(10deg);
+          }
+}

@@ -1,72 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Lato|Merienda|Pacifico|Permanent+Marker|Poiret+One");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #777;
-  /* //padding is not inherited lower! */
-  padding: 30px; }
-
-header {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  background-image: linear-gradient(to right bottom, rgba(168, 255, 120, 0.8), rgba(120, 255, 214, 0.8)), url(../assets/headerbg.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 95vh;
-  position: relative;
-  clip-path: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh); }
-  header .header-body {
-    transform: translateY(-15%); }
-    header .header-body .logo-container {
-      background-image: url(../assets/happy-smoothie.png);
-      background-position: top;
-      background-size: contain;
-      background-repeat: no-repeat;
-      height: 300px;
-      -webkit-animation: sway 1s ease-in-out 1;
-      -moz-animation: sway 1s ease-in-out 1;
-      -o-animation: sway 1s ease-in-out 1;
-      animation: sway 1s ease-in-out 1; }
-    header .header-body h1 {
-      text-align: center;
-      color: white;
-      padding: 10px;
-      font-family: "Dancing Script", cursive;
-      font-size: 5em;
-      -webkit-animation: moveinright 1s ease-in-out 1;
-      -moz-animation: moveinright 1s ease-in-out 1;
-      -o-animation: moveinright 1s ease-in-out 1;
-      animation: moveinright 1s ease-in-out 1; }
-
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 15px 40px;
-  display: inline-block; }
-
-.btn:hover {
-  transform: translateY(-3px); }
-
-/* //animate goes down on click */
-.btn:active {
-  transform: translateY(-1px); }
-
-.btn-white {
-  background-color: #fff;
-  color: #777;
-  border-radius: 15px;
-  width: 100px; }
-
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Lato|Merienda|Pacifico|Permanent+Marker|Poiret+One");
 @-webkit-keyframes moveinleft {
   0% {
     opacity: 0;
@@ -186,3 +119,281 @@ header {
   100% {
     opacity: 1;
     transform: rotate(10deg); } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  /* //padding is not inherited lower! */
+  padding: 30px; }
+
+header {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-image: linear-gradient(to right bottom, rgba(168, 255, 120, 0.8), rgba(120, 255, 214, 0.8)), url(../assets/headerbg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  position: relative;
+  clip-path: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh); }
+  header .header-body {
+    transform: translateY(-15%);
+    text-align: center; }
+    header .header-body .logo-container {
+      background-image: url(../assets/happy-smoothie.png);
+      background-position: top;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 300px;
+      -webkit-animation: sway 1s ease-in-out 1;
+      -moz-animation: sway 1s ease-in-out 1;
+      -o-animation: sway 1s ease-in-out 1;
+      animation: sway 1s ease-in-out 1; }
+    header .header-body .lorem-header {
+      -webkit-animation: moveinleft 1s ease-in-out 1;
+      -moz-animation: moveinleft 1s ease-in-out 1;
+      -o-animation: moveinleft 1s ease-in-out 1;
+      animation: moveinleft 1s ease-in-out 1;
+      color: white; }
+    header .header-body h1 {
+      text-align: center;
+      color: white;
+      padding: 10px;
+      font-family: "Dancing Script", cursive;
+      font-size: 5em;
+      -webkit-animation: moveinright 1s ease-in-out 1;
+      -moz-animation: moveinright 1s ease-in-out 1;
+      -o-animation: moveinright 1s ease-in-out 1;
+      animation: moveinright 1s ease-in-out 1; }
+    header .header-body .btn-white {
+      background-color: #fff;
+      color: rgba(0, 171, 119, 0.8);
+      border-radius: 30px;
+      width: 150px;
+      height: 40px;
+      box-shadow: none;
+      border: none;
+      -webkit-animation: moveinleft 1s ease-in-out 1;
+      -moz-animation: moveinleft 1s ease-in-out 1;
+      -o-animation: moveinleft 1s ease-in-out 1;
+      animation: moveinleft 1s ease-in-out 1; }
+
+.healthy-and-delicious {
+  text-align: right;
+  height: 100vh;
+  background-color: white;
+  clip-path: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh);
+  display: flex; }
+  .healthy-and-delicious .animated-smoothie {
+    margin-top: 20%;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../assets/healthy-smoothie.png);
+    margin-right: 50%; }
+  .healthy-and-delicious .section-body {
+    align-self: center;
+    text-align: right;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    padding: 10px; }
+    .healthy-and-delicious .section-body .lorem-here {
+      color: #a0db47; }
+    .healthy-and-delicious .section-body .section-title {
+      text-align: left;
+      font-family: "Lato", sans-serif;
+      color: #a0db47;
+      margin: 50px;
+      font-weight: bold; }
+      .healthy-and-delicious .section-body .section-title h2 {
+        font-size: 4rem; }
+
+.every-smoothie-is {
+  text-align: left;
+  height: 100vh;
+  background-color: #caeef9;
+  clip-path: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh);
+  display: flex; }
+  .every-smoothie-is .animated-smoothie {
+    margin-top: 20%;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 50%; }
+  .every-smoothie-is .section-body {
+    align-self: center;
+    text-align: left;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    padding: 10px; }
+    .every-smoothie-is .section-body .lorem-here {
+      color: white; }
+    .every-smoothie-is .section-body .section-title {
+      text-align: right;
+      font-family: "Lato", sans-serif;
+      color: white;
+      margin: 50px;
+      font-weight: bold; }
+      .every-smoothie-is .section-body .section-title h2 {
+        font-size: 4rem; }
+
+.lose-weight {
+  text-align: right;
+  height: 100vh;
+  background-color: white;
+  clip-path: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh);
+  display: flex; }
+  .lose-weight .animated-smoothie {
+    margin-top: 20%;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../assets/happy-smoothie.png);
+    margin-right: 50%; }
+  .lose-weight .section-body {
+    align-self: center;
+    text-align: right;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    padding: 10px; }
+    .lose-weight .section-body .lorem-here {
+      color: #a0db47; }
+    .lose-weight .section-body .section-title {
+      text-align: left;
+      font-family: "Lato", sans-serif;
+      color: #a0db47;
+      margin: 50px;
+      font-weight: bold; }
+      .lose-weight .section-body .section-title h2 {
+        font-size: 4rem; }
+
+.add-muscule {
+  text-align: left;
+  height: 100vh;
+  background-color: #e2f4c7;
+  clip-path: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh);
+  display: flex; }
+  .add-muscule .animated-smoothie {
+    margin-top: 20%;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../assets/swole-smoothie-green.png);
+    margin-left: 50%; }
+  .add-muscule .section-body {
+    align-self: center;
+    text-align: left;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    padding: 10px; }
+    .add-muscule .section-body .lorem-here {
+      color: white; }
+    .add-muscule .section-body .section-title {
+      text-align: right;
+      font-family: "Lato", sans-serif;
+      color: white;
+      margin: 50px;
+      font-weight: bold; }
+      .add-muscule .section-body .section-title h2 {
+        font-size: 4rem; }
+
+.stay-alert {
+  text-align: right;
+  height: 100vh;
+  background-color: white;
+  clip-path: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh);
+  display: flex; }
+  .stay-alert .animated-smoothie {
+    margin-top: 20%;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../assets/happy-smoothie.png);
+    margin-right: 50%; }
+  .stay-alert .section-body {
+    align-self: center;
+    text-align: right;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    padding: 10px; }
+    .stay-alert .section-body .lorem-here {
+      color: #a0db47; }
+    .stay-alert .section-body .section-title {
+      text-align: left;
+      font-family: "Lato", sans-serif;
+      color: #a0db47;
+      margin: 50px;
+      font-weight: bold; }
+      .stay-alert .section-body .section-title h2 {
+        font-size: 4rem; }
+
+.sign-up {
+  text-align: left;
+  height: 100vh;
+  background-color: #fc913a;
+  clip-path: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh);
+  display: flex; }
+  .sign-up .animated-smoothie {
+    margin-top: 20%;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 50%; }
+  .sign-up .section-body {
+    align-self: center;
+    text-align: left;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    padding: 10px; }
+    .sign-up .section-body .lorem-here {
+      color: white; }
+    .sign-up .section-body .section-title {
+      text-align: right;
+      font-family: "Lato", sans-serif;
+      color: white;
+      margin: 50px;
+      font-weight: bold; }
+      .sign-up .section-body .section-title h2 {
+        font-size: 4rem; }
+
+.btn:link, header .header-body .btn-white:link,
+.btn:visited,
+header .header-body .btn-white:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block; }
+
+.btn:hover, header .header-body .btn-white:hover {
+  transform: translateY(-3px); }
+
+/* //animate goes down on click */
+.btn:active, header .header-body .btn-white:active {
+  transform: translateY(-1px); }
