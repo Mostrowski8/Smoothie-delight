@@ -62,6 +62,7 @@
     "gulp-useref": "^3.1.6",
     "imagemin": "^6.1.0",
     "run-sequence": "^2.2.1",
-    "useref": "^1.4.1"
+    "useref": "^1.4.1",
+    "watchify": "^3.11.1"
   }
 }

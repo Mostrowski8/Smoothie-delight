@@ -6,7 +6,21 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    /* //padding is not inherited lower! */
+    padding: 30px;
+}
+
 header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 background-image: linear-gradient(to right bottom, $gradient-color-one, $gradient-color-two), url(../assets/headerbg.jpg);
 background-position: center;
 background-size: cover;
@@ -14,12 +28,98 @@ height: 95vh;
 position: relative;
 clip-path: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh);
 
-    h1 {
-        text-align: center;
-        color: white;
-        padding: $default-padding;
+.header-body{
+   transform: translateY(-15%);
+    
+    .logo-container {
+        background-image: url(../assets/happy-smoothie.png); 
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 300px;
+        @include animation( 'sway 1s ease-in-out 1');
     }
+    
+        h1 {
+            text-align: center;
+            color: white;
+            padding: $default-padding;
+            font-family: $title-font;
+            font-size: 5em;
+            @include animation('moveinright 1s ease-in-out 1');
+        }
+}
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* //animate goes down on click */
+.btn:active {
+  transform: translateY(-1px);
+}
+
+.btn-white {
+background-color: #fff;
+color: #777;
+border-radius: 15px;
+width: 100px;
 }
 
 
+@include keyframes(moveinleft) {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+          }
+        
+          80% {
+            transform: translateX(20px);
+          }
+        
+          100% {
+        opacity: 1;
+        transform: translate(0);
+          }
+}
 
+@include keyframes(moveinright) {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+          }
+        
+          80% {
+            transform: translateX(-20px);
+          }
+        
+          100% {
+        opacity: 1;
+        transform: translate(0);
+          }
+}
+
+@include keyframes(sway) {
+    0% {
+        opacity: 0;
+        transform: rotate(30deg);
+          }
+        
+          80% {
+            transform: rotate(-30deg);
+          }
+        
+          100% {
+            opacity: 1;
+        transform: rotate(10deg);
+          }
+}
