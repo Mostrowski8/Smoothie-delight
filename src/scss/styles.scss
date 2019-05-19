@@ -1,0 +1,25 @@
+@import 'variables', 'mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+background-image: linear-gradient(to right bottom, $gradient-color-one, $gradient-color-two), url(../assets/headerbg.jpg);
+background-position: center;
+background-size: cover;
+height: 95vh;
+position: relative;
+clip-path: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh);
+
+    h1 {
+        text-align: center;
+        color: white;
+        padding: $default-padding;
+    }
+}
+
+
+

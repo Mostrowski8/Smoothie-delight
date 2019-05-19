@@ -1,0 +1,67 @@
+{
+  "name": "smothie",
+  "version": "1.0.0",
+  "description": "singla page scroller for advertisment purposes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify src/js/index.js -o src/js/bundle.js",
+    "jswatch": "watchify src/js/index.js -o src/js/bundle.js",
+    "watch": "gulp"
+  },
+  "keywords": [
+    "smoothie"
+  ],
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "env"
+          ]
+        }
+      ]
+    ]
+  },
+  "watchify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "env"
+          ]
+        }
+      ]
+    ]
+  },
+  "author": "Marek Ostrowski",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.26.5",
+    "browserify": "^16.2.3",
+    "del": "^4.1.1",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^1.1.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^3.1.6",
+    "imagemin": "^6.1.0",
+    "run-sequence": "^2.2.1",
+    "useref": "^1.4.1"
+  }
+}
