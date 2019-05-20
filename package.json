@@ -38,6 +38,7 @@
   },
   "author": "Marek Ostrowski",
   "license": "ISC",
+  "node_ver": "10.14.1",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
