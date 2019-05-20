@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Lato|Merienda|Pacifico|Permanent+Marker|Poiret+One");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Lato|Merienda|Pacifico|Permanent+Marker|Poiret+One");
+@-webkit-keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@-moz-keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@-o-keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@-webkit-keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@-moz-keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@-o-keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@-webkit-keyframes sway {
+  0% {
+    opacity: 0;
+    transform: rotate(30deg); }
+  80% {
+    transform: rotate(-30deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(10deg); } }
+
+@-moz-keyframes sway {
+  0% {
+    opacity: 0;
+    transform: rotate(30deg); }
+  80% {
+    transform: rotate(-30deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(10deg); } }
+
+@-o-keyframes sway {
+  0% {
+    opacity: 0;
+    transform: rotate(30deg); }
+  80% {
+    transform: rotate(-30deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(10deg); } }
+
+@keyframes sway {
+  0% {
+    opacity: 0;
+    transform: rotate(30deg); }
+  80% {
+    transform: rotate(-30deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(10deg); } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100vw; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  /* //padding is not inherited lower! */
+  padding: 30px; }
+
+header {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-image: linear-gradient(to right bottom, rgba(168, 255, 120, 0.8), rgba(120, 255, 214, 0.8)), url(../assets/headerbg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  position: relative;
+  clip-path: polygon(0 0, 100vw 0vh, 100vw 80vh, 0 95vh); }
+  header .header-body {
+    transform: translateY(-15%);
+    text-align: center; }
+    header .header-body .logo-container {
+      background-image: url(../assets/happy-smoothie.png);
+      background-position: top;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 300px;
+      -webkit-animation: sway 1s ease-in-out 1;
+      -moz-animation: sway 1s ease-in-out 1;
+      -o-animation: sway 1s ease-in-out 1;
+      animation: sway 1s ease-in-out 1; }
+    header .header-body .lorem-header {
+      -webkit-animation: moveinleft 1s ease-in-out 1;
+      -moz-animation: moveinleft 1s ease-in-out 1;
+      -o-animation: moveinleft 1s ease-in-out 1;
+      animation: moveinleft 1s ease-in-out 1;
+      color: white; }
+    header .header-body h1 {
+      text-align: center;
+      color: white;
+      padding: 10px;
+      font-family: "Dancing Script", cursive;
+      font-size: 5em;
+      -webkit-animation: moveinright 1s ease-in-out 1;
+      -moz-animation: moveinright 1s ease-in-out 1;
+      -o-animation: moveinright 1s ease-in-out 1;
+      animation: moveinright 1s ease-in-out 1; }
+
+.healthy-and-delicious {
+  position: relative;
+  overflow: hidden;
+  text-align: right;
+  height: 100vh;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  display: flex; }
+  .healthy-and-delicious .col .input-label {
+    color: #89c135; }
+  .healthy-and-delicious .col input {
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    margin: 5px; }
+  .healthy-and-delicious .animated-smoothie {
+    align-self: center;
+    position: absolute;
+    height: 60%;
+    width: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../assets/healthy-smoothie.png); }
+  .healthy-and-delicious .section-body {
+    align-self: center;
+    text-align: right;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    padding: 10px; }
+    .healthy-and-delicious .section-body .lorem-here {
+      color: #89c135;
+      text-shadow: 0.5px 0.5px #e6e6e6; }
+    .healthy-and-delicious .section-body .section-title {
+      text-align: left;
+      font-family: "Lato", sans-serif;
+      color: #89c135;
+      margin: 50px;
+      font-weight: bold; }
+      .healthy-and-delicious .section-body .section-title h2 {
+        font-size: 4rem; }
+
+.every-smoothie-is {
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  height: 100vh;
+  background-color: #6fbdd4;
+  clip-path: polygon(0 0, 100% 2%, 100% 94%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 2%, 100% 94%, 0 100%);
+  display: flex; }
+  .every-smoothie-is .col .input-label {
+    color: white; }
+  .every-smoothie-is .col input {
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    margin: 5px; }
+  .every-smoothie-is .animated-smoothie {
+    align-self: center;
+    position: absolute;
+    height: 60%;
+    width: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .every-smoothie-is .section-body {
+    align-self: center;
+    text-align: left;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    padding: 10px; }
+    .every-smoothie-is .section-body .lorem-here {
+      color: white;
+      text-shadow: 0.5px 0.5px #48abc8; }
+    .every-smoothie-is .section-body .section-title {
+      text-align: right;
+      font-family: "Lato", sans-serif;
+      color: white;
+      margin: 50px;
+      font-weight: bold; }
+      .every-smoothie-is .section-body .section-title h2 {
+        font-size: 4rem; }
+
+.lose-weight {
+  position: relative;
+  overflow: hidden;
+  text-align: right;
+  height: 100vh;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  display: flex; }
+  .lose-weight .col .input-label {
+    color: #89c135; }
+  .lose-weight .col input {
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    margin: 5px; }
+  .lose-weight .animated-smoothie {
+    align-self: center;
+    position: absolute;
+    height: 60%;
+    width: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../assets/happy-smoothie.png); }
+  .lose-weight .section-body {
+    align-self: center;
+    text-align: right;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    padding: 10px; }
+    .lose-weight .section-body .lorem-here {
+      color: #89c135;
+      text-shadow: 0.5px 0.5px #e6e6e6; }
+    .lose-weight .section-body .section-title {
+      text-align: left;
+      font-family: "Lato", sans-serif;
+      color: #89c135;
+      margin: 50px;
+      font-weight: bold; }
+      .lose-weight .section-body .section-title h2 {
+        font-size: 4rem; }
+
+.add-muscule {
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  height: 100vh;
+  background-color: #acd66c;
+  clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0 92%);
+  -webkit-clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0 92%);
+  display: flex; }
+  .add-muscule .col .input-label {
+    color: white; }
+  .add-muscule .col input {
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    margin: 5px; }
+  .add-muscule .animated-smoothie {
+    align-self: center;
+    position: absolute;
+    height: 60%;
+    width: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../assets/swole-smoothie-green.png); }
+  .add-muscule .section-body {
+    align-self: center;
+    text-align: left;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    padding: 10px; }
+    .add-muscule .section-body .lorem-here {
+      color: white;
+      text-shadow: 0.5px 0.5px #96cb44; }
+    .add-muscule .section-body .section-title {
+      text-align: right;
+      font-family: "Lato", sans-serif;
+      color: white;
+      margin: 50px;
+      font-weight: bold; }
+      .add-muscule .section-body .section-title h2 {
+        font-size: 4rem; }
+
+.stay-alert {
+  position: relative;
+  overflow: hidden;
+  text-align: right;
+  height: 100vh;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  display: flex; }
+  .stay-alert .col .input-label {
+    color: #89c135; }
+  .stay-alert .col input {
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    margin: 5px; }
+  .stay-alert .animated-smoothie {
+    align-self: center;
+    position: absolute;
+    height: 60%;
+    width: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../assets/happy-smoothie.png); }
+  .stay-alert .section-body {
+    align-self: center;
+    text-align: right;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    padding: 10px; }
+    .stay-alert .section-body .lorem-here {
+      color: #89c135;
+      text-shadow: 0.5px 0.5px #e6e6e6; }
+    .stay-alert .section-body .section-title {
+      text-align: left;
+      font-family: "Lato", sans-serif;
+      color: #89c135;
+      margin: 50px;
+      font-weight: bold; }
+      .stay-alert .section-body .section-title h2 {
+        font-size: 4rem; }
+
+.sign-up {
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  height: 100vh;
+  background-color: #fc913a;
+  clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
+  display: flex; }
+  .sign-up .col .input-label {
+    color: white; }
+  .sign-up .col input {
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    margin: 5px; }
+  .sign-up .animated-smoothie {
+    align-self: center;
+    position: absolute;
+    height: 60%;
+    width: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .sign-up .section-body {
+    align-self: center;
+    text-align: left;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    padding: 10px; }
+    .sign-up .section-body .lorem-here {
+      color: white;
+      text-shadow: 0.5px 0.5px #fb7508; }
+    .sign-up .section-body .section-title {
+      text-align: right;
+      font-family: "Lato", sans-serif;
+      color: white;
+      margin: 50px;
+      font-weight: bold; }
+      .sign-up .section-body .section-title h2 {
+        font-size: 4rem; }
+
+.btn:link, .btn-white:link,
+.btn:visited,
+.btn-white:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block; }
+
+.btn:hover, .btn-white:hover {
+  transform: translateY(-3px); }
+
+/* //animate goes down on click */
+.btn:active, .btn-white:active {
+  transform: translateY(-1px); }
+
+.btn-white {
+  background-color: #fff;
+  color: rgba(0, 171, 119, 0.8);
+  border-radius: 30px;
+  width: 150px;
+  height: 40px;
+  box-shadow: none;
+  border: none;
+  -webkit-animation: moveinleft 1s ease-in-out 1;
+  -moz-animation: moveinleft 1s ease-in-out 1;
+  -o-animation: moveinleft 1s ease-in-out 1;
+  animation: moveinleft 1s ease-in-out 1; }
+
+@media only screen and (max-width: 600px) {
+  body {
+    max-width: 100vw;
+    padding: 10px; }
+    body header {
+      font-size: 1rem; }
+      body header .header-body .logo-container {
+        height: 100px; }
+      body header .header-body h1 {
+        font-size: 40px; }
+    body section .section-body .section-title h2 {
+      font-size: 1.5em !important; } }
