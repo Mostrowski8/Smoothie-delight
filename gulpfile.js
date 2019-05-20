@@ -36,7 +36,7 @@ gulp.task('sass', function() {
 
 //images
 gulp.task('images', function(){
-    return gulp.src('src/assets/**/*.+(png|jpg|jpeg|gif|svg)')
+    return gulp.src('src/assets/*.+(png|jpg|jpeg|gif|svg)')
     // Caching images that ran through imagemin
     .pipe(cache(imagemin({
         interlaced: true
@@ -59,20 +59,22 @@ gulp.task('clean:dist', function() {
 
 // Move the javascript files into our /src/js folder
 
-// gulp.task('js', function() {
-//     return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js'])
-//         .pipe(gulp.dest("src/js"))
-//         .pipe(gulp.dest("dist/js"))
-//         .pipe(browserSync.stream());
-// });
+gulp.task('js', function() {
+    return gulp.src(['src/js/bundle.js'])
+        .pipe(gulp.dest("src/js"))
+        .pipe(gulp.dest("dist/js"))
+        .pipe(browserSync.stream());
+});
 
-// gulp.task('buildjs', function() {
-//     return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js']);
-//         .pipe(gulp.dest("dist/js"))
-//         .pipe(browserSync.stream());
-// });
+gulp.task('buildjs', function() {
+    return gulp.src(['src/js/bundle.js'])
+        .pipe(gulp.dest("dist/js"))
+        .pipe(browserSync.stream());
+});
+
+
 gulp.task('buildcss', function() {
-    return gulp.src(['src/css/styles.css', 'src.bootstrap.css'])
+    return gulp.src(['src/css/styles.css', 'src/css/bootstrap.css'])
         .pipe(gulp.dest("dist/css"));
 });
 
@@ -96,7 +98,7 @@ gulp.task('deploy', function () {
 
   gulp.task('build', function (callback) {
     runSequence('clean:dist', 
-      ['sass', 'buildcss', 'buildjs', 'useref'],
+      ['images', 'sass', 'buildcss', 'buildjs', 'useref'],
       callback
     )
   })

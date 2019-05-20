@@ -30,6 +30,10 @@ window.onload = function() {
 	window.requestAnimationFrame(updateLax)
 }
 
+window.addEventListener("resize", function() {
+	lax.updateElements()
+});
+
 $('.lorem-here').append(lorem.generateWords(10)+'<br>'+lorem.generateWords(10)+'<br>'+lorem.generateWords(10)+'<br>'+'<br>'+lorem.generateWords(10)+'<br>'+lorem.generateWords(10));
 $('.lorem-header').append(lorem.generateWords(10)+'<br>'+lorem.generateWords(10)+'<br>'+lorem.generateWords(10));
 

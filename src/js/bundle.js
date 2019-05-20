@@ -11358,6 +11358,10 @@ window.onload = function () {
   window.requestAnimationFrame(updateLax);
 };
 
+window.addEventListener("resize", function () {
+  _lax2.default.updateElements();
+});
+
 (0, _jquery2.default)('.lorem-here').append(lorem.generateWords(10) + '<br>' + lorem.generateWords(10) + '<br>' + lorem.generateWords(10) + '<br>' + '<br>' + lorem.generateWords(10) + '<br>' + lorem.generateWords(10));
 (0, _jquery2.default)('.lorem-header').append(lorem.generateWords(10) + '<br>' + lorem.generateWords(10) + '<br>' + lorem.generateWords(10));
 

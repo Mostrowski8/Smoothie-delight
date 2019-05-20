@@ -39,7 +39,7 @@ background-color: $bgcolor;
 clip-path: $shape;
 -webkit-clip-path: $shape;
 display: flex;
-.col{
+.column{
     .input-label {
         color: if($bgcolor==white, darken($green, 30%), $white); 
     }
@@ -48,6 +48,14 @@ display: flex;
         border: none;
         box-shadow: none;
         margin: 5px;
+        padding-left: $default-padding;
+    }
+    textarea {
+        border-radius: 15px;
+        border: none;
+        box-shadow: none;
+        margin: 5px;
+        padding-left: $default-padding;
     }
 }
 
