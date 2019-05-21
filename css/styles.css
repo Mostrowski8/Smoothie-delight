@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Lato|Merienda|Pacifico|Permanent+Marker|Poiret+One");
-@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Lato|Merienda|Pacifico|Permanent+Marker|Poiret+One");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lato");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lato");
 @-webkit-keyframes moveinleft {
   0% {
     opacity: 0;
@@ -185,13 +185,20 @@ header {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   display: flex; }
-  .healthy-and-delicious .col .input-label {
+  .healthy-and-delicious .column .input-label {
     color: #89c135; }
-  .healthy-and-delicious .col input {
+  .healthy-and-delicious .column input {
     border-radius: 15px;
     border: none;
     box-shadow: none;
-    margin: 5px; }
+    margin: 5px;
+    padding-left: 10px; }
+  .healthy-and-delicious .column textarea {
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    margin: 5px;
+    padding-left: 10px; }
   .healthy-and-delicious .animated-smoothie {
     align-self: center;
     position: absolute;
@@ -229,13 +236,20 @@ header {
   clip-path: polygon(0 0, 100% 2%, 100% 94%, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 2%, 100% 94%, 0 100%);
   display: flex; }
-  .every-smoothie-is .col .input-label {
+  .every-smoothie-is .column .input-label {
     color: white; }
-  .every-smoothie-is .col input {
+  .every-smoothie-is .column input {
     border-radius: 15px;
     border: none;
     box-shadow: none;
-    margin: 5px; }
+    margin: 5px;
+    padding-left: 10px; }
+  .every-smoothie-is .column textarea {
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    margin: 5px;
+    padding-left: 10px; }
   .every-smoothie-is .animated-smoothie {
     align-self: center;
     position: absolute;
@@ -272,13 +286,20 @@ header {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   display: flex; }
-  .lose-weight .col .input-label {
+  .lose-weight .column .input-label {
     color: #89c135; }
-  .lose-weight .col input {
+  .lose-weight .column input {
     border-radius: 15px;
     border: none;
     box-shadow: none;
-    margin: 5px; }
+    margin: 5px;
+    padding-left: 10px; }
+  .lose-weight .column textarea {
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    margin: 5px;
+    padding-left: 10px; }
   .lose-weight .animated-smoothie {
     align-self: center;
     position: absolute;
@@ -316,13 +337,20 @@ header {
   clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0 92%);
   -webkit-clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0 92%);
   display: flex; }
-  .add-muscule .col .input-label {
+  .add-muscule .column .input-label {
     color: white; }
-  .add-muscule .col input {
+  .add-muscule .column input {
     border-radius: 15px;
     border: none;
     box-shadow: none;
-    margin: 5px; }
+    margin: 5px;
+    padding-left: 10px; }
+  .add-muscule .column textarea {
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    margin: 5px;
+    padding-left: 10px; }
   .add-muscule .animated-smoothie {
     align-self: center;
     position: absolute;
@@ -360,13 +388,20 @@ header {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   display: flex; }
-  .stay-alert .col .input-label {
+  .stay-alert .column .input-label {
     color: #89c135; }
-  .stay-alert .col input {
+  .stay-alert .column input {
     border-radius: 15px;
     border: none;
     box-shadow: none;
-    margin: 5px; }
+    margin: 5px;
+    padding-left: 10px; }
+  .stay-alert .column textarea {
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    margin: 5px;
+    padding-left: 10px; }
   .stay-alert .animated-smoothie {
     align-self: center;
     position: absolute;
@@ -404,13 +439,20 @@ header {
   clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
   display: flex; }
-  .sign-up .col .input-label {
+  .sign-up .column .input-label {
     color: white; }
-  .sign-up .col input {
+  .sign-up .column input {
     border-radius: 15px;
     border: none;
     box-shadow: none;
-    margin: 5px; }
+    margin: 5px;
+    padding-left: 10px; }
+  .sign-up .column textarea {
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    margin: 5px;
+    padding-left: 10px; }
   .sign-up .animated-smoothie {
     align-self: center;
     position: absolute;
@@ -476,5 +518,9 @@ header {
         height: 100px; }
       body header .header-body h1 {
         font-size: 40px; }
+    body section .column {
+      text-align: center !important; }
+      body section .column label {
+        margin-top: 15px !important; }
     body section .section-body .section-title h2 {
       font-size: 1.5em !important; } }
