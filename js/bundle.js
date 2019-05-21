@@ -11342,10 +11342,8 @@ var lorem = new _loremIpsum.LoremIpsum({
   }
 });
 
-console.log("lax", _lax2.default);
-
 window.onload = function () {
-  console.log("lax fired");
+
   _lax2.default.setup({
     breakpoints: { small: 0, large: 992 }
   }); // init
@@ -11364,5 +11362,12 @@ window.addEventListener("resize", function () {
 
 (0, _jquery2.default)('.lorem-here').append(lorem.generateWords(10) + '<br>' + lorem.generateWords(10) + '<br>' + lorem.generateWords(10) + '<br>' + '<br>' + lorem.generateWords(10) + '<br>' + lorem.generateWords(10));
 (0, _jquery2.default)('.lorem-header').append(lorem.generateWords(10) + '<br>' + lorem.generateWords(10) + '<br>' + lorem.generateWords(10));
+
+var $headerButton = (0, _jquery2.default)('.get-smooth');
+var $hb = (0, _jquery2.default)('html, body');
+var $target = (0, _jquery2.default)('.healthy-and-delicious');
+$headerButton.on('click', function () {
+  $hb.animate({ scrollTop: $target.offset().top + 'px' });
+});
 
 },{"jquery":1,"lax.js":2,"lorem-ipsum":7}]},{},[18]);

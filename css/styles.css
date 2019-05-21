@@ -513,6 +513,9 @@ header {
   -moz-animation: moveinleft 1s ease-in-out 1;
   -o-animation: moveinleft 1s ease-in-out 1;
   animation: moveinleft 1s ease-in-out 1; }
+  .btn-white a {
+    text-decoration: none;
+    color: rgba(0, 171, 119, 0.8); }
 
 @media only screen and (max-width: 600px) {
   body {
