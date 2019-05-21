@@ -188,6 +188,7 @@ header {
   .healthy-and-delicious .column .input-label {
     color: #89c135; }
   .healthy-and-delicious .column input {
+    min-height: 27px;
     border-radius: 15px;
     border: none;
     box-shadow: none;
@@ -239,6 +240,7 @@ header {
   .every-smoothie-is .column .input-label {
     color: white; }
   .every-smoothie-is .column input {
+    min-height: 27px;
     border-radius: 15px;
     border: none;
     box-shadow: none;
@@ -289,6 +291,7 @@ header {
   .lose-weight .column .input-label {
     color: #89c135; }
   .lose-weight .column input {
+    min-height: 27px;
     border-radius: 15px;
     border: none;
     box-shadow: none;
@@ -340,6 +343,7 @@ header {
   .add-muscule .column .input-label {
     color: white; }
   .add-muscule .column input {
+    min-height: 27px;
     border-radius: 15px;
     border: none;
     box-shadow: none;
@@ -391,6 +395,7 @@ header {
   .stay-alert .column .input-label {
     color: #89c135; }
   .stay-alert .column input {
+    min-height: 27px;
     border-radius: 15px;
     border: none;
     box-shadow: none;
@@ -442,6 +447,7 @@ header {
   .sign-up .column .input-label {
     color: white; }
   .sign-up .column input {
+    min-height: 27px;
     border-radius: 15px;
     border: none;
     box-shadow: none;
